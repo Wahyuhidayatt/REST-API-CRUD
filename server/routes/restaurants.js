@@ -3,12 +3,12 @@ var router = express.Router()
 var Controller = require('../controllers/RestaurantController')
 
 /* GET home page. */
-router.post('/', Controller.createItem );
+router.post('/', Controller.create );
 
-router.get('/show', Controller.getItem );
+router.get('/show', Controller.get);
 //
-router.put('/update/:_id', Controller.updateItem);
+router.put('/update/:_id', Controller.update);
 
-router.delete('/delete/:_id', Controller.deleteItem )
+router.delete('/delete/:_id', Controller.delete )
 
 module.exports = router;

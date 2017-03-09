@@ -20,10 +20,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(3000)
 
-app.use('/api',restaurants)
+app.use('/',restaurants)
 // app.use('/', index);
 // app.use('/restaurants', restaurants);
-app.use('/foods', foods);
+app.use('/api', foods);
 
 
 module.exports = app

@@ -1,6 +1,6 @@
 var express = require('express')
 var router = express.Router()
-var Controller = require('../controllers/FoodController')
+var Controller = require('../controllers/FoodsController')
 
 /* GET home page. */
 router.post('/createFood', Controller.createFood );

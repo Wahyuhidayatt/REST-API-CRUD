@@ -9,18 +9,18 @@ npm install
 
 Route | HTTP | Description
 ------------ | ------------- | ------------
-/api/create | GET | create restaurant
-/api/show | GET | Get all data restaurant
-/api/update/:id | POST | Update data restaurant
-/api/delete/:id | DELETE | Delete a restaurant
+/create | GET | create restaurant
+/show | GET | Get all data restaurant
+/update/:id | POST | Update data restaurant
+/delete/:id | DELETE | Delete a restaurant
 
 
 #Features foods!
 
 Route | HTTP | Description
 ------------ | ------------- | ------------
-/api/create | POST | create foods
-/api/show | GET | Get all data foods
-/api/update/:id | POST | Update data food
-/api/delete/:id | DELETE | Delete a foods
+/api/createFood | POST | create foods
+/api/showFood | GET | Get all data foods
+/api/updateFood/:id | POST | Update data food
+/api/deleteFood/:id | DELETE | Delete a foods
 <!-- /api/users/:id | PUT | Update a foods with new info -->
