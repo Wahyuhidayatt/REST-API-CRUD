@@ -6,6 +6,8 @@ var Controller = require('../controllers/RestaurantController')
 router.post('/create', Controller.create );
 
 router.get('/show', Controller.get);
+
+router.get('/showById/:id', Controller.getRestaurant)
 //
 router.put('/update/:_id', Controller.update);
 

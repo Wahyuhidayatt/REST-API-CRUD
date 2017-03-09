@@ -4,6 +4,7 @@ let Food = require('../models/food')
 
 let foods = {}
 
+
   foods.createFood = function(req, res, next) {
     Food.create({
       name : req.body.name,
@@ -19,6 +20,16 @@ let foods = {}
       res.send(itemData)
     })
   }
+
+  foods.getFood = function (req, res, next) {
+    Food.find({
+      _id: req.params.id
+    })
+      .then(function (food) {
+        res.send(food)
+      })
+  }
+
   //
   foods.updateFood = function(req, res) {
     Food.findById(req.params._id, function (err, food) {

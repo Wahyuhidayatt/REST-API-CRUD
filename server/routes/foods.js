@@ -6,6 +6,8 @@ var Controller = require('../controllers/FoodsController')
 router.post('/createFood', Controller.createFood );
 
 router.get('/showFood', Controller.getFood );
+
+router.get('/showByIdFood/:id', Controller.getFood)
 //
 router.put('/updateFood/:_id', Controller.updateFood);
 

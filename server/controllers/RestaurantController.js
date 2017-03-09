@@ -20,6 +20,16 @@ let restaurants = {}
       res.send(itemData)
     })
   }
+
+  restaurants.getRestaurant = function (req, res, next) {
+  Restaurant.find({
+    _id: req.params.id
+  })
+    .then(function (restaurant) {
+      res.send(restaurant)
+    })
+}
+
   //
   restaurants.update = function(req, res) {
     Restaurant.findById(req.params._id, function (err, restaurant) {
