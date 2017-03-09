@@ -1,22 +1,26 @@
 # REST-API-CRUD
 
+
+clone respo
+npm install
+
+
 #Features restaurant!
 
 Route | HTTP | Description
 ------------ | ------------- | ------------
-/api/create | GET | GET data restataurant
-/api/users/:id | GET | Get a single restataurant
-/api/users | POST | Create restataurant
-/api/users/:id | DELETE | Delete a restataurant
-/api/users/:id | PUT | Update a restataurant with new info
+/api/create | GET | create restaurant
+/api/show | GET | Get all data restaurant
+/api/update/:id | POST | Update data restaurant
+/api/delete/:id | DELETE | Delete a restaurant
 
 
 #Features foods!
 
 Route | HTTP | Description
 ------------ | ------------- | ------------
-/api/create | GET | GET data foods
-/api/users/:id | GET | Get a single foods
-/api/users | POST | Create foods
-/api/users/:id | DELETE | Delete a foods
-/api/users/:id | PUT | Update a foods with new info
+/api/create | POST | create foods
+/api/show | GET | Get all data foods
+/api/update/:id | POST | Update data food
+/api/delete/:id | DELETE | Delete a foods
+<!-- /api/users/:id | PUT | Update a foods with new info -->

@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
 
-var index = require('./routes/')
+// var index = require('./routes/')
 var restaurants = require('./routes/restaurants');
 var foods = require('./routes/foods');
 
@@ -20,8 +20,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(3000)
 
-app.use('/', index);
-app.use('/restaurants', restaurants);
+app.use('/api',restaurants)
+// app.use('/', index);
+// app.use('/restaurants', restaurants);
 app.use('/foods', foods);
 
 
