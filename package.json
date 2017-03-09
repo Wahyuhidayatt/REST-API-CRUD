@@ -1,0 +1,25 @@
+{
+  "name": "rest-api-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wahyuhidayatt/REST-API-CRUD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wahyuhidayatt/REST-API-CRUD/issues"
+  },
+  "homepage": "https://github.com/Wahyuhidayatt/REST-API-CRUD#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.6"
+  }
+}
