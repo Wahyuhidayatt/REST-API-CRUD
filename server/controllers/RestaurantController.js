@@ -11,7 +11,7 @@ let restaurants = {}
       address : req.body.address,
       open_status : req.body.open_status
     }).then(function(){
-      res.send("Create new food")
+      res.send("Create new Restaurant")
     })
   }
 
@@ -35,7 +35,7 @@ let restaurants = {}
               restaurant.open_status = req.body.open_status
 
             // Save the updated document back to the database
-            food.save(function (err, item) {
+            restaurant.save(function (err, item) {
                 if (err) {
                     res.status(500).send(err)
                 }

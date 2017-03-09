@@ -3,7 +3,7 @@ var router = express.Router()
 var Controller = require('../controllers/RestaurantController')
 
 /* GET home page. */
-router.post('/', Controller.create );
+router.post('/create', Controller.create );
 
 router.get('/show', Controller.get);
 //
